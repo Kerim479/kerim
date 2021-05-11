@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Images</title>
+    <style>
+        .clear{
+
+            overflow: auto;
+            /*overflow auto sayesinde resmi ve yazı otomatik olarak aynı borderda bulunur.*/
+    }
+        p{
+
+            border:1px solid black;
+            /*yazımız eğer fotoğarafa oranla daha küçük olsaydı border  paragrafımızı sadece kaplamış olacaktı. */
+
+        }
+
+        img{
+
+            width: 300px;
+            float: left;
+            margin-right:30px;
+            /*margin right 10 px ne dmeek dersem eğer fotoğraf ile yazı arasdındaki mesafeyi artırır.*/
+        /*resimden sonra maalesef oran ve boyutuyla oyanayamıyoruz.Ama floattan sonra artık bu tutsaklık bitmiş oluyor.*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, amet ullam consectetur odit dolor id doloribus
+        nesciunt molestiae hic aliquid blanditiis cupiditate qui accusamus, tempora aut recusandae fuga. Delectus,
+        doloremque.
+    </p>
+    <p class="clear">
+
+        <img src="hz.hamza.jpg" alt="">
+        Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae itaque voluptate aliquam vero, rerum iste quod eligendi soluta vitae fuga eum aliquid nisi quasi consectetur explicabo corrupti deleniti tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cumque reprehenderit laboriosam perferendis non quisquam corporis ratione aspernatur porro aliquam consequatur enim magni debitis numquam corrupti nostrum esse, sequi omnis. adipisicing elit. Maiores quidem minus exercitationem quam voluptates impedit maxime ad ut minima nulla! Tempora, recusandae! Corporis recusandae labore tempore sit officia. Dignissimos, expedita!
+
+    </p>
+</body>
+
+</html>

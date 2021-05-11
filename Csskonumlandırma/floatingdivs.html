@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating divs</title>
+
+    <style>
+        div{
+
+            background: gray;
+        }
+        
+        .box{
+
+            width: 170px;
+            height: 170px;
+            margin: 3px;
+        }
+
+        }
+        #container{
+            background:gray;
+            
+            
+        }
+        #first{
+            background:red;
+            float: left;
+            
+        
+        }
+
+        #second {
+            background:blue;
+            float: left;
+            
+        }
+
+        #third {
+            background:green;
+            float: left;
+            
+        }
+        /* 1)eğer class clear ise
+
+          .clear{
+           overflow: auto;
+        }
+        2)eğer class clearfix
+
+        .clearfix::after{
+
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+        3)ya da şunu yapabiliriz
+        class clear olmak şartıyla
+        <div style="clear:both;"></div>
+         da arka planı gray yapar ve bunu sağlar.
+
+        */
+        p:after{
+
+            content: "- deneme";
+            display: block;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div id="container" class="clear">
+        <div id="first" class="box"></div>
+        <div id="second" class="box"></div>
+        <div id="third" class="box"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <p>
+        Lorem, ipsum dolor.
+    </p>
+
+</body>
+
+</html>
